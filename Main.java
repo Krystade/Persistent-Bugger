@@ -1,13 +1,20 @@
+
 class Persist {
 	public static int persistence(long n) {
     int test = 1;
     int count = 0;
-    while (){
-  		while (test < n){
+    int persist = 0;
+    if (n > 9){
+    	while (test < n){
         test *= 10;
         count++;
       }
+      while (n > 9){
+      
+      }
+    int remainder = n % 10;
+    }else{
     }
-  int remainder = n % 10;
+    return persist;
 	}
 }
