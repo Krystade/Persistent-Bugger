@@ -9,13 +9,20 @@ class Persist {
         test *= 10;
         count++;
       }
+      count = 0;
       int[] remainders = int[count];
       while (n > 9){
-	 int remainder = n % 10;
-	 remainders[persist] = remainder;
-         n /= 10;
-	 persist++;
+        int remainder = n % 10;
+        remainders[count] = remainder;
+        n /= 10;
+        count++
       }
+      placeholder = count;
+      for (int i = 0; i < placeholder; i++){
+      n *= remainders[count + i]
+      }
+      System.out.println("n: " + n);
+      persist++;
     int remainder = n % 10;
     }else{}
     return persist;
