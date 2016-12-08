@@ -9,12 +9,15 @@ class Persist {
         test *= 10;
         count++;
       }
+      int[] remainders = int[count];
       while (n > 9){
-      
+	 int remainder = n % 10;
+	 remainders[persist] = remainder;
+         n /= 10;
+	 persist++;
       }
     int remainder = n % 10;
-    }else{
-    }
+    }else{}
     return persist;
 	}
 }
